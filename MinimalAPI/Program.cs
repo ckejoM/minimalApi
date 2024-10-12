@@ -37,6 +37,6 @@ var app = builder.Build();
 //    await context.Response.WriteAsync("Product added"); 
 //});
 
-var mapGroup = app.MapGroup("/productsGroup").ProductsAPI(products);
+var mapGroup = app.MapGroup("/productsGroup").ProductsAPI();
 
 app.Run();
